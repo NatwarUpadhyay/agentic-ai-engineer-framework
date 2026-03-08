@@ -1,0 +1,18 @@
+# .gitignore
+.env
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+data/agent_memory.json
+03-claude-code-toolkit/skills/*.md
+*.zip
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

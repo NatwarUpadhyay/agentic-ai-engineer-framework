@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install-and-run",
+      "type": "shell",
+      "command": "python3 -m venv .venv && .venv/bin/pip install -q gradio openai requests python-dotenv Pillow azure-ai-textanalytics azure-search-documents azure-identity && echo '✅ ALL PACKAGES INSTALLED' && .venv/bin/python app.py",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "run-app",
+      "type": "shell",
+      "command": ".venv/bin/python app.py",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
